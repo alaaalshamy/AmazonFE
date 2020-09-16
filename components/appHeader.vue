@@ -1,5 +1,8 @@
 <template>
   <div>
+      <NoSsr placeholder="Loading...">
+      <h2>This part is rendered on the client-side only</h2>
+    </NoSsr>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
       <a class="navbar-brand navLogo">Dashboard</a>
       <button
@@ -14,7 +17,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/">Add new Product</nuxt-link>
+            <nuxt-link class="nav-link" to="/product/add_product_page">Add new Product</nuxt-link>
           </li>
           <li class="nav-item">
             <nuxt-link class="nav-link" to="/about">Add new Category</nuxt-link>

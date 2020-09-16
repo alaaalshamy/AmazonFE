@@ -1,45 +1,39 @@
 <template>
-  <div class="col-lg-4 col-md-6">
-    <nuxt-link :to="'/product/'+id">
-      <div  >
-        <div  >
+    <div class="col-lg-4 col-md-6">
+      <v-card class="mx-auto my-12" max-width="374">
+        <nuxt-link :to="'/product/'+id">
           <div class="single_place">
             <div class="thumb">
-              <img :src="url +'img/'+ product.productImg" alt />
+              <img class="img" :src="url +'img/'+ product.productImg" alt />
               <a href="#" class="prise">${{product.productPrice}}</a>
             </div>
-            <div class="place_info">
-              <a href="destination_details.html">
-                <h3>{{product.productName}}</h3>
-              </a>
-            <p>{{product.productDes}}</p>
-              <div class="rating_days d-flex justify-content-between">
-                <span class="d-flex justify-content-center align-items-center">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <a href="#">(20 Review)</a>
-                </span>
-              </div>
-            </div>
+          <nuxt-link :to="'/product/'+id">
+            <v-card-title>{{product.productName}}</v-card-title>
+          </nuxt-link>
+
+          <v-card-text>
+            <v-row align="center" class="mx-0">
+              <p>{{product.productDes}}</p>
+            </v-row>
+            <v-row align="center" class="mx-0">
+              <v-rating :value="5" color="yellow" dense half-increments readonly size="14"></v-rating>
+            </v-row>
+          </v-card-text>
           </div>
-        </div>
-      </div>
-    </nuxt-link>
-  </div>
+
+        </nuxt-link>
+      </v-card>
+    </div>
 </template>
 <script>
 export default {
   name: "productComponent",
   props: ["id", "product"],
-  data(){
+  data() {
     return {
-      url:"http://localhost:8000/"
-    }
-
-  }
+      url: process.env.DEVHOST,
+    };
+  },
 };
 </script>
 <style>

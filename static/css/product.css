@@ -15,17 +15,23 @@
     font-style: normal;
   }
   .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    width:100%;
+  margin: 70px auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   }
 
   /* line 13, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
   .img {
     vertical-align: middle;
     border-style: none;
+    width:340px;
+    max-height: 340px;;
+    min-height: 340px;;
+
     max-width: 100%;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;

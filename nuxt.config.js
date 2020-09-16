@@ -77,6 +77,8 @@ export default {
   */
   buildModules: [
     '@nuxt/typescript-build',
+    '@nuxtjs/dotenv',
+
     '@nuxtjs/vuetify',
 
   ],
@@ -85,9 +87,8 @@ export default {
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org
-    'vuetify-dialog/nuxt',
+    // 'vuetify-dialog/nuxt',
     '@nuxtjs/vuetify',
-
 
     // Doc: https://github.com/nuxt-community/style-resources-module
     'nuxt-fontawesome',

@@ -41,19 +41,6 @@ export default {
 </script>
 
 <style>
-.container {
-  width:100%;
-  margin: 100px auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-
-.links {
-  padding-top: 15px;
-}
 
 </style>

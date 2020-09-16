@@ -1,15 +1,17 @@
 <template>
-  <div>
+  <v-app>
     <AppHeader/>
+    <!-- <VuetfiyBar/> -->
     <Nuxt />
-  </div>
+  </v-app>
 </template>
 <script>
 import AppHeader from "../components/appHeader";
-
+import VuetfiyBar from "../components/VuetfiyBar";
 export default {
   component:{
-    AppHeader
+    AppHeader,
+    VuetfiyBar
   }
 }
 </script>
@@ -39,35 +41,5 @@ html {
   
   box-sizing: border-box;
   margin: 0 auto;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-  text-decoration-line: none;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
 }
 </style>
